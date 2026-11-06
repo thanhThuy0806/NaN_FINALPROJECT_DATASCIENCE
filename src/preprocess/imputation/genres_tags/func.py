@@ -1,7 +1,7 @@
 from typing import List
 from collections import Counter
-from utils.preprocess.imputation.genres_tags.schemas import InsertRequest, RetrieveRequest, RetrieveResponse
-from utils.preprocess.imputation.genres_tags.core import collection
+from src.preprocess.imputation.genres_tags.schemas import InsertRequest, RetrieveRequest, RetrieveResponse
+from src.preprocess.imputation.genres_tags.core import collection
 
 
 

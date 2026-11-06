@@ -1,5 +1,5 @@
 import chromadb
-from utils.preprocess.imputation.genres_tags.model import embed_func
+from src.preprocess.imputation.genres_tags.model import embed_func
 
 
 

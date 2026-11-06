@@ -1,5 +1,5 @@
 from llama_index.embeddings.ollama import OllamaEmbedding
-from utils.preprocess.imputation.genres_tags.schemas import CustomEmbeddingFunction
+from src.preprocess.imputation.genres_tags.schemas import CustomEmbeddingFunction
 
 
 embed_model = OllamaEmbedding(
