@@ -4,7 +4,7 @@ import pandas as pd
 
 
 
-cpu_df = pd.read_csv('data/cpu/CpuList.csv')
+cpu_df = pd.read_csv('data/origin/cpu/CpuList.csv')
 
 devices = ["Desktop", "Laptop", "Mobile"]
 
