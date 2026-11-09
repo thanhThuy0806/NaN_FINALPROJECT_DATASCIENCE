@@ -20,7 +20,14 @@ docker compose up -d
 docker exec ollama ollama pull nomic-embed-text-v2-moe qwen3.5:2b
 ```
 
-**Preprocess:**  
+## Preprocess
+The guide below show you how to run the preprocess pipeline so you can recreate **data cleaned version** from **provided data**
+### Crawler
+
+### VectorDB retrieval
+
+### Normalization and Imputation
+
 *Note*: It is **not recommneded** to run this in the pipeline entirely because the total it consumes is **about 6-10 hours of waiting**. Instead, you should use and cleaned version after 2 first processes in **021_preprocess1_crawler.ipynb** and **022_preprocess1_vectordb.ipynb**. The **chroma-data**( because the **vector database the project used is chromadb**), will be provided separately so you can download it and **try retrieval process**
 
 - Craw for missing value: Run **021_preprocess1_crawler.ipynb** with fallback using LLM model to fill out missing value that failed to crawl  
@@ -28,4 +35,3 @@ docker exec ollama ollama pull nomic-embed-text-v2-moe qwen3.5:2b
 - Vector database embbed and retrieval: Run **022_preprocess2_vectordb.ipynb**
 
 - Normalize and Impute can be found in **023_preprocess1_norm_impu.ipynb**
-
