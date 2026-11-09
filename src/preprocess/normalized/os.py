@@ -2,7 +2,7 @@ import re
 import numpy as np
 import pandas as pd
 
-os_df = pd.read_csv('data/os/OsList.csv')
+os_df = pd.read_csv('data/origin/os/OsList.csv')
 
 # 1. Pre-build Linux & Other OS lookup from OsList.csv
 # Filter out 2-3 character tokens (like 'MX' or 'B2G') that could false-positive on hardware specs

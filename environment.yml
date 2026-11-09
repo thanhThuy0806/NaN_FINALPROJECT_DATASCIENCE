@@ -4,20 +4,18 @@ channels:
   - defaults
 dependencies:
   - python=3.12
+  - pip
   - numpy
   - pandas
   - matplotlib
-  - scikit-learn
-  - requests
-  - protobuf
+  - seaborn=0.13
+  - missingno=0.5
   - pydantic
   - llama-index
   - onnxruntime
   - tokenizers
   - notebook
   - jupyter
-  # model
-  - lightgbm
-  - pip
-  - pip:
-    - chromadb-client
+  - lightgbm=4.7
+pip:
+  - chromadb-client
